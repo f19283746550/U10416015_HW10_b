@@ -11,10 +11,10 @@ public class BubbleSort {
 	    	x=input.nextInt();
 	    	a.add(x);
 	    	total++;
-	    }
+	    }//輸入數字
 	    for(int i=0;i<total;i++) {
 	    	System.out.print(a.get(i)+",");
-	    }
+	    }//先印一遍使用者打的順序
 	    System.out.println();
 	    for(int i=1;i<=total;i++) {
 	    	for(int j=0;j<total-i;j++) {
@@ -24,9 +24,9 @@ public class BubbleSort {
 	    			a.add(j+1,x);
 	    		}
 	    	}
-	    }
+	    }//從小排到大
 	    for(int i=0;i<total;i++) {
 	    	System.out.print(a.get(i)+",");
-	    }
+	    }//將整理完的印出來
 	}
 }
